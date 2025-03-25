@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Leadership</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Leader Boxes */
+.leaders {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.team-card {
+    perspective: 1000px;
+    height: 350px;
+}
+
+.team-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.team-card:hover .team-card-inner {
+    transform: rotateY(180deg);
+}
+
+.team-card-front, .team-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background: white;
+    padding: 20px;
+}
+
+.team-card-back {
+    transform: rotateY(180deg);
+}
+
+    </style>
+</head>
+<body class="bg-gray-100 p-10">
+
+    <h2 class="text-3xl font-bold text-center mb-10">Our Leadership</h2>
+
+    <div class="leaders">
+        <!-- Leader 1 -->
+        <div class="team-card">
+            <div class="team-card-inner">
+                <div class="team-card-front">
+                    <img class="image-placeholder" src="./assets/images/leader1.png" alt="Leader 1">
+                    <h3 class="text-xl font-semibold mt-4">Prapull Tm</h3>
+                    <p class="text-gray-500">Founder & CEO</p>
+                </div>
+                <div class="team-card-back">
+                    <p class="text-lg font-semibold">Prapull Tm</p>
+                    <p class="text-sm mt-2">Visionary leader with expertise in technology and innovation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leader 2 -->
+        <div class="team-card">
+            <div class="team-card-inner">
+                <div class="team-card-front">
+                    <img class="image-placeholder" src="./assets/images/leader2.png" alt="Leader 2">
+                    <h3 class="text-xl font-semibold mt-4">Manoj</h3>
+                    <p class="text-gray-500">Co-Founder</p>
+                </div>
+                <div class="team-card-back">
+                    <p class="text-lg font-semibold">Manoj</p>
+                    <p class="text-sm mt-2">Strategic thinker driving growth and partnerships.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leader 3 -->
+        <div class="team-card">
+            <div class="team-card-inner">
+                <div class="team-card-front">
+                    <img class="image-placeholder" src="./assets/images/leader3.png" alt="Leader 3">
+                    <h3 class="text-xl font-semibold mt-4">Surya Prakash</h3>
+                    <p class="text-gray-500">CTO</p>
+                </div>
+                <div class="team-card-back">
+                    <p class="text-lg font-semibold">Surya Prakash</p>
+                    <p class="text-sm mt-2">Tech expert leading innovation in product development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

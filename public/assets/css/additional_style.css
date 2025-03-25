@@ -1,0 +1,329 @@
+@media (max-width: 992px) {
+    .navbar-link {
+        position: relative;
+        color: white;
+        text-transform: capitalize;
+        font-size: unset;
+        font-weight: var(--fw-500);
+    }
+}
+
+/* About Us Section */
+.about {
+    background-color: #ffdd61;
+    padding: 50px 20px;
+    color: black;
+}
+
+.about_container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: flex-end;
+}
+
+.left {
+    width: 50%;
+    font-size: 8rem;
+    font-weight: bolder;
+}
+
+.right {
+    width: 50%;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 20px;
+}
+
+.highlight {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.highlight a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    display: inline;
+}
+
+/* Leadership Section */
+    .leadership {
+        padding: 50px 20px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .leadership h2 {
+        font-size: 5rem;
+        font-weight: bolder;
+    }
+
+    /* Leader Boxes */
+    /* Container */
+    .leaders {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    /* Card styles */
+    .leader1, .leader2, .leader3 {
+        text-align: center;
+        padding: 20px;
+        background: #f7f7f7;
+        color: black;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+        width: 100%;
+        height: 400px;
+        perspective: 1000px; /* Enables 3D effect */
+    }
+
+    /* Inner wrapper for flipping */
+    .card-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    /* Flip effect on hover */
+    .leader1:hover .card-inner,
+    .leader2:hover .card-inner,
+    .leader3:hover .card-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Front and Back common styles */
+    .card-front, .card-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Front side */
+    .card-front {
+        background: #f7f7f7;
+    }
+
+    .image-placeholder {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    /* Back side */
+    .card-back {
+        background-color: #333;
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .leaders {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+/* news letter */
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact > main {
+    background-color: white;
+    height: 50rem;
+    width: 70%;
+    padding: 3rem;
+    border-radius: 150px;
+}
+
+.contact > main > h1 {
+    text-align: center;
+    font-size: 5vh;
+    margin: 1vh;
+    margin-top: 5vh;
+}
+
+.contact > main > form {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact > main > form > div {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+    margin: 0.5rem;
+}
+.contact > main > form > div > label {
+    font: 400 2rem "Roboto";
+    width: 20%;
+    margin: 0 1rem;
+}
+.contact > main > form > div > input {
+    align-self: stretch;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgba(123, 123, 123, 0.6);
+    outline: none;
+}
+.contact > main > form > button {
+    margin: 4rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font: 500 2rem;
+    font-weight: bolder;
+}
+.contact > main > form > button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 992px) {
+    .contact > main {
+        width: 90%;
+        border-radius: 120px 0 0 120px;
+    }
+
+    .contact > main > form > div {
+        width: 80%;
+    }
+
+    .contact > main > h1 {
+        text-align: center;
+        font-size: 4vh;
+        margin: 1vh;
+        margin-top: 3vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .about > .about_container {
+        display: flex;
+        width: 90%;
+        margin: none;
+        flex-direction: column;
+    }
+    .about > .about_container > .left {
+        width: 90%;
+        font-size: 6rem;
+    }
+    .about > .about_container > .right {
+        width: 90%;
+    }
+
+    .contact > main {
+        width: 100%;
+        background-color: #ffdd61;
+    }
+
+    .contact > main > form > div > label {
+        display: none;
+    }
+
+    .contact > main > form {
+        margin: 0rem;
+    }
+
+    .contact > main > form > div > input {
+        width: 100%;
+        background-color: white;
+    }
+}
+
+/* Cookie Popup Styling */
+.cookie-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.cookie-container p {
+    margin: 0;
+}
+
+.cookie-container a {
+    color: #ffdd61;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cookie-container button {
+    background: #ffdd61;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cookie-container.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Help Centre phone number toast */
+.toast {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* .help-link:hover + .toast {
+    display: block;
+    opacity: 1;
+} */

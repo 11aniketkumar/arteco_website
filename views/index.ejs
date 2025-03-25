@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arteco</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/Logo.png">
+  <link rel="stylesheet" href="assets/css/additional_style.css">
+  <link rel="stylesheet" href="assets/css/animation_style.css">
+
+</head>
+
+<body id="top">
+
+    <!-- Cookie Popup -->
+    <div id="cookie-popup" class="cookie-container">
+        <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn more</a></p>
+        <button id="accept-cookies">Accept</button>
+    </div>
+
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header" data-header style="background-color: black;">
+    <div class="container">
+        <div class="logo">
+            <img class="logo_pic" src="assets/images/logo_pic.png" alt="img">
+            <img class="logo_text" src="assets/images/logo_text.png" alt="img">
+        </div>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">Arteco</a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#feature" class="navbar-link" data-nav-link>Features</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#aboutus" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#newsletter" class="navbar-link" data-nav-link>News Letter</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="#" id="sendEmailLink" class="btn btn-primary has-before has-after">Let’s Talk 👋</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-color: black;" kid="home" aria-label="hero">
+        <div class="container" >
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">
+              Building Digital <span class="has-before">Product</span>, Brand and Experience
+            </h1>
+
+            <p class="hero-text">
+              At ARTECO, we are revolutionizing the way design students and professionals access resources, learn new skills, and experience architecture through technology-driven solutions. Our mission is to bridge the gap between theory and practice, making learning more accessible, interactive, and efficient.  
+
+            </p>
+
+            <div class="wrapper">
+              <a href="#service" class="btn btn-primary has-before has-after">Services </a>
+
+              <button class="hero-btn" aria-label="Markity promo">
+             
+
+                <a href="#aboutus"><span  class="span">About</span></a>
+              </button>
+            </div>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="https://www.linkedin.com/company/105330990/admin/dashboard/" class="social-link" target="_blank" style="--color: hsl(241, 77%, 63%);">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+
+                  <span class="span">LinkedIn</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/arteco_studios" target="_blank" class="social-link" style="--color: hsla(0, 100%, 50%, 0.671);">
+                  <ion-icon name="logo-instagram"></ion-icon>
+
+                  <span class="span">Instagram</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://x.com/Arteco_studios?t=Wj_RCpj6T8L5pGPfdlmktw&s=08" target="_blank" class="social-link" style="--color: hsl(203, 89%, 53%);">
+                  <ion-icon name="logo-twitter"></ion-icon>
+
+                  <span class="span">Twitter</span>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/digital-art-style-illustration-graphic-designer.jpg" width="74" height="0" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" style="background-color: #ffdd61;" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle has-before text-center">Our Services</p>
+
+          <h2 class="h2 section-title text-center">Managing you business with our <span class="has-before">best
+              service</span></h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card" style="--color: 174, 77%, 50%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-1.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Education</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 267, 76%, 57%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-2.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Smart Staionary</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 17, 100%, 68%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-3.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Educational Trips</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 343, 98%, 60%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-4.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Design & Solutions</a>
+                </h3>
+
+              </div>
+            </li>
+
+            
+
+           
+
+            
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" id="feature" aria-label="feature">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="./assets/images/3d-cartoon-scene-depicting-variety-people-multitasking.jpg" width="520" height="585" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle has-before">Why Choose us</p>
+
+            <h2 class="h2 section-title" id="fea_title">
+              Great Services at affordable Price
+            </h2>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 174, 77%, 50%">
+                    <ion-icon name="pencil-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title" >Architecture Stationery</h3>
+
+                    <p class="card-text">
+                      Smart vending machines providing 24/7 access to essential design materials, eliminating the hassle of sourcing supplies. 
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 241, 77%, 63%;">
+                    <ion-icon name="desktop-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title" >Software Training</h3>
+
+                    <p class="card-text">
+                      Hands-on learning for industry-standard design software, ensuring students are job-ready with practical skills.  
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 343, 98%, 60%;">
+                    <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title" >Educational Tours</h3>
+
+                    <p class="card-text">
+                      Immersive study trips with live case studies, documentation guidance, and expert interactions to enhance learning beyond classrooms.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 174, 77%, 50%">
+                    <ion-icon name="logo-ionitron" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title" >AR/VR Learning Solutions</h3>
+
+                    <p class="card-text">
+                      Interactive 3D models and virtual walkthroughs to make architectural concepts more engaging and realistic.   
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- About Us Section -->
+    <section class="about" id="aboutus">
+      <div class="about_container">
+          <div class="left">About us</div>
+          <div class="right">
+              <p>ARTECO is an innovative startup dedicated to enhancing design education through architecture stationery, software training, AR/VR solutions, and educational tourism. Our mission is to bridge the gap between theoretical learning and practical application, empowering students with the right tools and experiences.</p>
+              <p class="highlight">More than just thinkers, we are innovators—dedicated to reimagining the future of <a href="#">web design</a>, <a href="#">development</a>, and <a href="#">digital marketing</a>.</p>
+          </div>
+      </div>
+
+      <div class="leadership">
+        <h2>Our Leadership</h2>
+        <div class="leaders">
+          
+          <div class="leader1 card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img class="image-placeholder" src="./assets/images/leader1.png" alt="">
+                <h3>Prapull Tm</h3>
+                <p>Founder & Ceo</p>
+              </div>
+              <div class="card-back">
+                <p>Experienced leader with a passion for innovation and technology.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="leader2 card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img class="image-placeholder" src="./assets/images/leader2.png" alt="">
+                <h3>Manoj</h3>
+                <p>Co-Founder</p>
+              </div>
+              <div class="card-back">
+                <p>Bringing strategic vision and business growth expertise.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="leader3 card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img class="image-placeholder" src="./assets/images/leader3.png" alt="">
+                <h3>Surya Prakash</h3>
+                <p>CTO</p>
+              </div>
+              <div class="card-back">
+                <p>Technology-driven leader shaping the future of digital solutions.</p>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+  </section>
+      <!-- 
+        - #NEWSLETTER
+      -->
+      <div class="contact" id="newsletter">
+        <main>
+            <h1>Subscribe to our News Letter</h1>
+            <form method="post" action="/subscribe">
+                <div>
+                    <label>Name*</label>
+                    <input type="text" placeholder="Your Name" name="name" required="" />
+                </div>
+                <div>
+                    <label>Email*</label>
+                    <input type="email" placeholder="email@gmail.com" name="email" required="" />
+                </div>
+                <div>
+                    <label>Phone</label>
+                    <input type="tel" name="phone" placeholder="+91 987 654 3210" />
+                </div>
+                <button type="submit">Subscribe</button>
+            </form>
+        </main>
+    </div>  
+
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <p class="footer-list-title">About ARTECO</p>
+
+          <p class="footer-text">
+            ARTECO is an innovative startup dedicated to enhancing design education through smart solutions. From architecture stationery vending machines and software training to educational tours and AR/VR learning experiences, we bridge the gap between theory and practice, making learning more accessible, engaging, and efficient for design students and professionals.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" target="_blank" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://x.com/Arteco_studios?t=Wj_RCpj6T8L5pGPfdlmktw&s=08" target="_blank" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/company/105330990/admin/dashboard/" target="_blank" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/arteco_studios" target="_blank" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="#" id="sendEmailLink2" class="footer-link">Contact us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">How it Works</a>
+          </li>
+
+          
+
+          <li>
+            <a href="terms_and_conditions.html" target="_blank" class="footer-link">Terms & Services</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Community</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link help-link">Help Center</a>
+            <div class="toast">Call us at: 944-865-5962</div>
+          </li>
+
+          <li>
+            <a href="#" id="sendEmailLink3" class="footer-link">Suggestions</a>
+          </li>
+
+          <li>
+            <a href="#newsletter" class="footer-link">Newsletters</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Instagram post</p>
+          </li>
+
+          <li>
+            <ul class="insta-post">
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/i2.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/i3.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/i1.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/i4.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2024 ARTECO | All Rights Reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="terms_and_conditions.html" target="_blank" class="footer-bottom-link">Terms and conditions</a>
+          </li>
+
+          <li>
+            <a href="privacy_policy.html" target="_blank" class="footer-bottom-link">Privacy policy</a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+    -->
+    <script src="./assets/js/utils.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+  
+  <!-- 
+    - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

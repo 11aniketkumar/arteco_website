@@ -1,0 +1,26 @@
+/* Initial state: hidden with slight downward shift */
+.hero-banner,
+.feature-banner img,
+.section-title,
+.section-subtitle,
+.leader,
+.feature-list,
+.service-card,
+.contact {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+/* Appears when visible */
+.hero-banner.in-view,
+.feature-banner img.in-view,
+.section-title.in-view,
+.section-subtitle.in-view,
+.leader.in-view,
+.feature-list.in-view,
+.service-card.in-view,
+.contact.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
