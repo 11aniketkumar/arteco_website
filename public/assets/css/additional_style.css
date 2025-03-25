@@ -51,100 +51,99 @@
 }
 
 /* Leadership Section */
-    .leadership {
-        padding: 50px 20px;
-        width: 90%;
-        margin: auto;
-    }
+.leadership {
+    padding: 50px 20px;
+    width: 90%;
+    margin: auto;
+}
 
-    .leadership h2 {
-        font-size: 5rem;
-        font-weight: bolder;
-    }
+.leadership h2 {
+    font-size: 5rem;
+    font-weight: bolder;
+}
 
-    /* Leader Boxes */
-    /* Container */
+/* Leader Boxes */
+/* Container */
+.leaders {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+/* Card styles */
+.leader1,
+.leader2,
+.leader3 {
+    text-align: center;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+}
+
+/* Inner wrapper for flipping */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Flip effect on hover */
+.leader1:hover .card-inner,
+.leader2:hover .card-inner,
+.leader3:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and Back common styles */
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Front side */
+.card-front {
+    background: #f7f7f7;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* Back side */
+.card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
     .leaders {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-        justify-content: center;
-        width: 80%;
-        margin: auto;
+        grid-template-columns: 1fr;
     }
-
-    /* Card styles */
-    .leader1, .leader2, .leader3 {
-        text-align: center;
-        padding: 20px;
-        background: #f7f7f7;
-        color: black;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        position: relative;
-        width: 100%;
-        height: 400px;
-        perspective: 1000px; /* Enables 3D effect */
-    }
-
-    /* Inner wrapper for flipping */
-    .card-inner {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-    }
-
-    /* Flip effect on hover */
-    .leader1:hover .card-inner,
-    .leader2:hover .card-inner,
-    .leader3:hover .card-inner {
-        transform: rotateY(180deg);
-    }
-
-    /* Front and Back common styles */
-    .card-front, .card-back {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        backface-visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        padding: 20px;
-        text-align: center;
-    }
-
-    /* Front side */
-    .card-front {
-        background: #f7f7f7;
-    }
-
-    .image-placeholder {
-        width: 100%;
-        height: 250px;
-        margin-bottom: 15px;
-        border-radius: 10px;
-    }
-
-    /* Back side */
-    .card-back {
-        background-color: #333;
-        color: white;
-        transform: rotateY(180deg);
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-        .leaders {
-            grid-template-columns: 1fr;
-        }
-    }
-
+}
 
 /* news letter */
 .contact {
@@ -282,6 +281,7 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    z-index: 10;
 }
 
 .cookie-container p {
